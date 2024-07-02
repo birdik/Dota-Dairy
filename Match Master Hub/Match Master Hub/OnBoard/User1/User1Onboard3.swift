@@ -13,13 +13,14 @@ struct User1Onboard3: View {
     
     var body: some View {
         ZStack {
-            Color.load1
+            LinearGradient(gradient: Gradient(colors: [.color5, .color6]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             Image("notifi")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 237, height: 267)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .ignoresSafeArea()
 
             
             VStack (alignment: .center, spacing: 5) {

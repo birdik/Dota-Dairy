@@ -10,7 +10,7 @@ import SwiftUI
 struct User1Onboard1: View {
     var body: some View {
         ZStack {
-            Color.load1
+            LinearGradient(gradient: Gradient(colors: [.color5, .color6]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
             Image("users1")
@@ -18,6 +18,7 @@ struct User1Onboard1: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .ignoresSafeArea()
+            
             
             VStack (alignment: .center, spacing: 5) {
                 Image("Frames1")

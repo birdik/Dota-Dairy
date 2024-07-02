@@ -13,22 +13,17 @@ struct User1Onboard2: View {
     
     var body: some View {
         ZStack {
-            if isStar {
-                LinearGradient(gradient: Gradient(colors: [.color, .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                    .ignoresSafeArea()
-            } else {
-                Color.load1
-                    .ignoresSafeArea()
-            }
+            LinearGradient(gradient: Gradient(colors: [.color5, .color6]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
             
-            Image(isStar ? "users3" : "users2")
+            Image("users3")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxHeight: .infinity, alignment: .bottom)
                 .ignoresSafeArea()
             
             VStack (alignment: .center, spacing: 5) {
-                Image(isStar ? "Frames3" : "Frames2")
+                Image("Frames2")
                     .resizable()
                     .frame(width: 152, height: 6)
                     .padding()
